@@ -1,0 +1,182 @@
+
+/* For large devices */
+
+@media screen and  ( min-width: 1200px) {
+ 
+  .new__button {
+    bottom: 8.5rem;
+    right: 5.5rem; 
+  }
+
+  .shop__button {
+    bottom: 8.5rem;
+    right: 5.5rem; 
+  }
+}
+
+
+
+@media screen and (max-width: 1200px) {
+  .home__img {
+    height: 400px;
+  }
+
+  /* .new__button {
+    bottom: 8.5rem;
+    right: 5.5rem; 
+  } */
+}
+
+@media screen and (min-width: 992px) {
+.shop__button  {
+  bottom: 8.5rem;
+  right: 4rem;  
+}
+
+.new__button {
+  bottom: 8.5rem;
+  right: 4rem;  
+}
+
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+  }
+
+  .section__title {
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-2);
+  }
+
+  .home__content {
+    padding: 8rem 0 2rem;
+  }
+
+  .home__img {
+    height: 330px;
+    transform: translateY(0);
+  }
+
+  .home__indicator {
+    bottom: initial;
+    left: initial;
+    top: 5rem;
+    right: 4.5rem;
+  }
+
+  .home__indicator::after {
+    top: -2.5rem;
+    height: 45px;
+  }
+
+  .home__details-img {
+    right: 3rem;
+    bottom: initial;
+    /* background-color: palevioletred; */
+  }
+
+  .home__description {
+    padding-right: 0;
+  }
+
+  .swiper-pagination {
+    margin-top: var(--mb-2);
+  }
+
+  .discount__container {
+    column-gap: 3rem;
+  }
+
+  .new__content {
+    width: 242px;
+    padding: 2rem 0 1.5rem 0;
+  }
+
+  .new__img {
+    width: 150px;
+  }
+
+  .new__img,
+  .new__subtitle {
+    margin-bottom: var(--mb-0-5);
+  }
+
+  .new__title {
+    font-size: var(--normal-font-size);
+  }
+
+
+
+  /* STEPS */
+
+  .steps__bg {
+    padding: 3rem 2rem 2rem;
+  }
+
+  .steps__container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem;
+  }
+
+  /*=============== SHOP PAGE ===============*/
+
+  .shop__container {
+    grid-template-columns: 1.6fr 3.4fr;
+  }
+
+  .shop__content {
+    padding: 2rem 0 1.5rem 0;
+    border-radius: 0.75rem;
+  }
+
+  .shop__img {
+    width: 130px;
+  }
+
+  .shop__img,
+  .shop__subtitle {
+    margin-bottom: var(--mb-0-5);
+  }
+
+  .shop__title {
+    font-size: var(--normal-font-size);
+  }
+
+  .shop__button {
+    bottom: 7rem;
+    right: 5rem;  
+  }
+
+  /*=============== CONTACT PAGE ===============*/
+
+  .contact__inputs {
+    grid-template-columns: 1fr;
+    row-gap: 1.5rem;
+  }
+
+  /*=============== ABOUT PAGE ===============*/
+
+  .about__container {
+    column-gap: 4rem;
+  }
+
+  .about__img {
+    width: 300px;
+    border-radius: var(--border-radius-5);
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.3);
+  }
+
+  /*=============== DETAILS PAGE ===============*/
+
+  .details__container {
+    grid-template-columns: 1.1fr 0.9fr;
+    /* background-color: paleturquoise; */
+  }
+
+  .details__title {
+    margin-bottom: var(--mb-0-5);
+  }
+}

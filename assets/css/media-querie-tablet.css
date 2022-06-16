@@ -1,0 +1,146 @@
+
+
+/* For medium devices */
+
+@media screen and (max-width: 767px) {
+  body {
+    margin: var(--header-height) 0 0 0;
+  }
+
+  .section {
+    padding: 4.5rem 0 2rem;
+  }
+
+  .nav {
+    height: var(--header-height);
+  }
+
+  /** HOME */
+
+  .home {
+    padding: 0.5rem 0;
+  }
+
+  .home__img {
+    margin: auto;
+    height: 250px;
+  }
+
+  .home__indicator {
+    bottom: initial;
+    left: initial;
+    top: 5rem;
+    right: 10rem;
+  }
+
+  .home__details-img {
+    right: 8rem;
+    bottom: initial;
+    /* background-color: palevioletred; */
+  }
+
+  .home__data {
+    /* background-color: paleturquoise; */
+    padding-inline: 2rem;
+  }
+
+  .nav__menu {
+    position: fixed;
+    background-color: var(--body-color);
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    padding: 6rem 2rem 3.5rem;
+    transition: var(--transition-04);
+  }
+
+  .nav__list {
+    flex-direction: column;
+    row-gap: 3rem;
+  }
+
+  .nav__link {
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-bold);
+  }
+
+  .nav__toggle,
+  .nav__close {
+    display: block;
+  }
+
+  .home__content {
+    padding: 0;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
+
+  /*===== SHOW MENU =====*/
+
+  .show-menu {
+    right: 0;
+  }
+
+  .home__title {
+    margin-bottom: var(--mb-1);
+  }
+
+  .home__description {
+    margin-bottom: var(--mb-1-5);
+  }
+
+  .swiper-pagination {
+    margin-top: var(--mb-1);
+  }
+
+  /** DISCOUNT **/
+
+  .discount__container {
+    column-gap: 2rem;
+  }
+
+  .newsletter__container {
+    grid-template-columns: 0.7fr;
+  }
+
+  /*=============== ABOUT PAGE ===============*/
+
+  .about__container {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+
+  .about__data {
+    padding-inline: 4rem;
+  }
+
+  .about__title {
+    text-align: center;
+  }
+
+  /*=============== SHOP PAGE ===============*/
+
+  .shop__container {
+    grid-template-columns: 520px;
+    justify-content: center;
+    row-gap: 2rem;
+  }
+
+  .pagination {
+    justify-content: center;
+  }
+
+  /*=============== DETAILS PAGE ===============*/
+
+  .details__container {
+    grid-template-columns: 0.8fr;
+    justify-content: center;
+    row-gap: 2rem;
+  }
+
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1rem;
+  }
+}

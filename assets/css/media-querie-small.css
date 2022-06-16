@@ -1,0 +1,54 @@
+
+
+/* For small devices */
+
+@media screen and (max-width: 320px) {
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+
+  .nav {
+    column-gap: 0;
+  }
+
+  .home__img {
+    height: 200px;
+  }
+
+  .home__buttons {
+    flex-direction: column;
+    min-width: max-content;
+    row-gap: 1rem;
+    text-align: center;
+  }
+
+  .button--link {
+    padding-top: var(--mb-0-5);
+    margin: auto;
+  }
+
+  .steps__bg {
+    padding: 2rem 1rem;
+  }
+
+  .steps__card {
+    padding: 1.5rem;
+  }
+
+  /*=============== SHOP PAGE ===============*/
+
+  .shop__container {
+    grid-template-columns: 1fr;
+  }
+
+  .pagination span {
+    font-size: var(--small-font-size);
+  }
+
+  /*=============== DETAILS PAGE ===============*/
+
+  .product__images {
+    grid-template-columns: 1fr;
+  }
+}

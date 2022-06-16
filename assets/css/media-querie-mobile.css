@@ -1,0 +1,104 @@
+/* For mobile devices */
+
+@media screen and (max-width: 576px) {
+  .home__data {
+    /* background-color: paleturquoise; */
+    padding-inline: unset;
+  }
+
+  /** DISCOUNT **/
+
+  .discount__container {
+    grid-template-columns: 1fr;
+    row-gap: 1.25rem;
+    padding: 2.25rem 0 1.25rem;
+    border-radius: 1rem;
+  }
+
+  .discount__title {
+    text-align: center;
+  }
+
+  .discount__img {
+    justify-self: center;
+    order: 1;
+  }
+
+  .discount__data {
+    padding-left: 0;
+  }
+
+  .steps__container {
+    grid-template-columns: 1fr;
+  }
+
+  .steps__bg {
+    padding: 3rem 2rem 2rem;
+  }
+
+  .footer__container {
+    justify-items: start;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+
+  .newsletter__container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__copy {
+    margin-top: 4.5rem;
+  }
+
+  .message,
+  .cart {
+    width: 100%;
+  }
+
+  /*=============== ABOUT PAGE ===============*/
+
+  .about__data {
+    padding-inline: initial;
+  }
+
+  .about__title {
+    text-align: initial;
+  }
+
+  /*=============== SHOP PAGE ===============*/
+
+  .shop__container {
+    grid-template-columns: 0.8fr;
+  }
+
+  .shop__items {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    padding: 1.25rem 1.4rem;
+  }
+
+  .pagination {
+    column-gap: 0.4rem;
+  }
+
+  .pagination span {
+    height: 1.8rem;
+    width: 1.8rem;
+    line-height: 30px;
+  }
+
+  /*=============== CONTACT PAGE ===============*/
+
+  .contact__container {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+
+  /*=============== DETAILS PAGE ===============*/
+
+  .details__container {
+    grid-template-columns: 1fr;
+  }
+}

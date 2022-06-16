@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== BOXICONS ===============-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="./assets/image/logo/logoGreen.png"
+      type="image/x-icon"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+     <link rel="stylesheet" href="assets/css/media-querie-desktop.css" />
+    <link rel="stylesheet" href="assets/css/media-querie-tablet.css" />
+    <link rel="stylesheet" href="assets/css/media-querie-mobile.css" />
+    <link rel="stylesheet" href="assets/css/media-querie-small.css" />
+
+    <title>E-commerce</title>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo bx-tada-hover">
+          <i class="bx bxs-shopping-bags nav__logo-icon"></i>e-shop
+        </a>
+        <!-- NAV -->
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">Home</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="shop.html" class="nav__link active-link">Shop</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="about.html" class="nav__link">About</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="contact.html" class="nav__link">Contact</a>
+            </li>
+          </ul>
+
+          <div class="nav__close" id="nav-close">
+            <i class="bx bx-x"></i>
+          </div>
+        </div>
+        <!-- NAV BTNS -->
+        <!-- NAV BTNS -->
+        <div class="nav__btns">
+          <div class="login__toggle">
+            <i class="bx bx-moon bx-spin-hover" id="theme-toggler"></i>
+          </div>
+
+          <div class="nav__shop" id="cart-shop">
+            <i
+              class="bx bx-shopping-bag bx-tada-hover"
+              id="shopping-cart-icon"
+            ></i>
+            <span class="cart-count" id="cart-count">0</span>
+          </div>
+
+          <div class="login__toggle" id="login-button">
+            <i class="bx bx-user bx-burst-hover"></i>
+          </div>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="bx bx-grid-alt"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--=============== CART ===============-->
+
+    <div class="cart" id="cart">
+      <i class="bx bx-x cart__close" id="cart-close"></i>
+      <h2 class="cart__title-center">My Cart</h2>
+      <!--  -->
+      <div class="cart__container">
+        <div class="empty-state">
+          <img src="./assets/image/empty-cart.png" alt="" />
+          <h5>Aun no has agregado ningun producto a tu carrito</h5>
+        </div>
+        <!-- 1 -->
+        <!-- <article class="cart__card">
+          <div class="cart__box">
+            <img
+              src="./assets/image/cart-1.png"
+              alt="cart 1"
+              class="cart__img"
+            />
+          </div>
+         
+          <div class="card__details">
+            <h3 class="cart__title">WindBreaker</h3>
+            <span class="cart__price">$12</span>
+            
+            <div class="cart__amount">
+              <div class="cart__amount-content">
+                <span class="cart__amount-box">
+                  <i class="bx bx-minus"></i>
+                </span>
+                <span class="cart__amount-number">1</span>
+                <span class="cart__amount-box">
+                  <i class="bx bx-plus"></i>
+                </span>
+              </div>
+             
+              <i class="bx bx-trash-alt cart__amount-trash"></i>
+            </div>
+          </div>
+        </article> -->
+
+        <!--  -->
+        <!-- <div class="cart__prices">
+          <span class="cart__prices-item">3 item</span>
+          <span class="cart__prices-total">$46</span>
+        </div> -->
+      </div>
+    </div>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <!--=============== SHOP ===============-->
+      <section class="shop section container">
+        <h2 class="breadcrumb__title">Shop Page</h2>
+        <h3 class="breadcrumb__subtitle">Home > <span>Shop</span></h3>
+        <!--  -->
+        <div class="shop__container grid">
+          <div class="sidebar">
+            <h3 class="filter__title">Select Filter</h3>
+
+            <!-- 1 Condition -->
+            <div class="filter__content">
+              <h3 class="filter__subtitle">Condition</h3>
+              <!-- filter new-->
+              <div class="filter">
+                <input type="checkbox" name="" id="" />
+                <p>New</p>
+                <span>(13)</span>
+              </div>
+              <!-- filter sales -->
+              <div class="filter">
+                <input type="checkbox" name="" id="" />
+                <p>Sales</p>
+                <span>(13)</span>
+              </div>
+            </div>
+
+            <!-- 2 Size -->
+            <div class="filter__content">
+              <h3 class="filter__subtitle">Size</h3>
+              <!-- filter small-->
+              <div class="filter">
+                <input type="checkbox" name="" id="" />
+                <p>S</p>
+                <span>(13)</span>
+              </div>
+              <!-- filter medium -->
+              <div class="filter">
+                <input type="checkbox" name="" id="" />
+                <p>M</p>
+                <span>(15)</span>
+              </div>
+              <!-- filter large -->
+              <div class="filter">
+                <input type="checkbox" name="" id="" />
+                <p>L</p>
+                <span>(6)</span>
+              </div>
+            </div>
+
+            <!-- 3 categories -->
+            <div class="filter__content">
+              <h3 class="filter__subtitle">Categories</h3>
+              <!-- filter men-->
+              <div class="filter">
+                <input type="checkbox" name="" id="" />
+                <p>Men</p>
+                <span>(2)</span>
+              </div>
+              <!-- filter women -->
+              <div class="filter">
+                <input type="checkbox" name="" id="" />
+                <p>Women</p>
+                <span>(4)</span>
+              </div>
+              <!-- filter kids -->
+              <div class="filter">
+                <input type="checkbox" name="" id="" />
+                <p>Kids</p>
+                <span>(6)</span>
+              </div>
+              <!-- filter others -->
+              <div class="filter">
+                <input type="checkbox" name="" id="" />
+                <p>Others</p>
+                <span>(8)</span>
+              </div>
+            </div>
+
+            <!-- 4 styles -->
+            <div class="filter__content">
+              <h3 class="filter__subtitle">Styles</h3>
+              <!-- filter casual-->
+              <div class="filter">
+                <input type="checkbox" name="" id="" />
+                <p>Casual</p>
+                <span>(2)</span>
+              </div>
+              <!-- filter dressy -->
+              <div class="filter">
+                <input type="checkbox" name="" id="" />
+                <p>Dressy</p>
+                <span>(4)</span>
+              </div>
+              <!-- filter girl -->
+              <div class="filter">
+                <input type="checkbox" name="" id="" />
+                <p>Girly</p>
+                <span>(6)</span>
+              </div>
+            </div>
+
+            <!-- 5 sub categories -->
+            <div class="filter__content">
+              <h3 class="filter__subtitle">Sub-Categories</h3>
+              <!-- filter jackets-->
+              <div class="filter">
+                <input type="checkbox" name="" id="" />
+                <p>Jackets</p>
+                <span>(2)</span>
+              </div>
+              <!-- filter t-shirts -->
+              <div class="filter">
+                <input type="checkbox" name="" id="" />
+                <p>T-shirts</p>
+                <span>(4)</span>
+              </div>
+              <!-- filter accessories -->
+              <div class="filter">
+                <input type="checkbox" name="" id="" />
+                <p>Accessories</p>
+                <span>(6)</span>
+              </div>
+              <!-- filter shoes -->
+              <div class="filter">
+                <input type="checkbox" name="" id="" />
+                <p>Shoes</p>
+                <span>(8)</span>
+              </div>
+              <!-- filter coats -->
+              <div class="filter">
+                <input type="checkbox" name="" id="" />
+                <p>Coats</p>
+                <span>(8)</span>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+
+          <div class="shop__items grid cart-load">
+            <!-- 5 -->
+            <!-- <div class="shop__content">
+              <div class="shop__tag">New</div>
+              <img
+              src="./assets/image/product-5.png"
+                alt="product 1"
+                class="shop__img"
+                />
+                <h3 class="shop__title">WindBreaker Jackets</h3>
+              
+              <span class="shop__subtitle">Accessory</span>
+             
+              <div class="shop__prices">
+                <span class="shop__price">$10.99</span>
+                <span class="shop__discounts">$20.99</span>
+              </div>
+            
+              <a href="details.html" class="button shop__button">
+                <i class="bx bx-cart-alt shop__icon"></i>
+              </a>
+            </div> -->
+
+            <!-- 6 -->
+            <!-- <div class="shop__content">
+              <div class="shop__tag">Sale</div>
+              <img
+                src="./assets/image/product-6.png"
+                alt="product 1"
+                class="shop__img"
+              />
+              <h3 class="shop__title">Adidas tracksuit</h3>
+              <span class="shop__subtitle">Accessory</span>
+             
+              <div class="shop__prices">
+                <span class="shop__price">$17.99</span>
+                <span class="shop__discounts">$27.99</span>
+              </div>
+              
+              <a href="details.html" class="button shop__button" id="product-button">
+                <i class="bx bx-cart-alt shop__icon"></i>
+              </a>
+            </div> -->
+          </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+          <i class="bx bx-chevron-left pagination__icon"></i>
+
+          <span class="current">1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>&middot; &middot; &middot;</span>
+          <span>9</span>
+
+          <i class="bx bx-chevron-right pagination__icon"></i>
+        </div>
+      </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <!-- 1 -->
+        <div class="footer__content">
+          <a href="#" class="footer__logo">
+            <i class="bx bxs-shopping-bags footer__logo-icon"></i>e-shopper
+          </a>
+          <p class="footer__description">
+            Enjoy the biggest sale <br />
+            of your life
+          </p>
+
+          <div class="footer__social">
+            <a href="#" class="footer__social-link"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+            <a href="#" class="footer__social-link"
+              ><i class="bx bxl-instagram-alt"></i
+            ></a>
+            <a href="#" class="footer__social-link"
+              ><i class="bx bxl-twitter"></i
+            ></a>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="footer__content">
+          <h3 class="footer__title">About</h3>
+
+          <ul class="footer__links">
+            <li><a href="about.html" class="footer__link">About Us</a></li>
+            <li><a href="#" class="footer__link">Customer Support</a></li>
+            <li><a href="#" class="footer__link">Customer center</a></li>
+          </ul>
+        </div>
+
+        <!-- 3 -->
+        <div class="footer__content">
+          <h3 class="footer__title">Our Services</h3>
+
+          <ul class="footer__links">
+            <li><a href="shop.html" class="footer__link">Shop</a></li>
+            <li><a href="#" class="footer__link">Discounts</a></li>
+            <li><a href="#" class="footer__link">Shipping mode</a></li>
+          </ul>
+        </div>
+        <!-- 4 -->
+        <div class="footer__content">
+          <h3 class="footer__title">Our Company</h3>
+
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Register</a></li>
+            <li><a href="contact.html" class="footer__link">Contact</a></li>
+            <li><a href="about.html" class="footer__link">About Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <!--  -->
+      <span class="footer__copy">&#169; Adrián MGL. All rights reserved</span>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="bx bx-up-arrow-alt scrollup__icon"></i>
+    </a>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
